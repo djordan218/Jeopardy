@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-image: url(images/bg.jpg);
+}
+
+h1 {
+  font-family: "Erica One", cursive;
+  color: white;
+  font-size: 8em;
+  -webkit-text-stroke: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+#jeopardy {
+  position: relative;
+  text-align: center;
+  font-size: 9pt;
+  background-color: #060ce9;
+  color: black;
+  border-collapse: collapse;
+  animation: bgColors 30s infinite;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  size: 20px;
+  color: white;
+}
+
+@keyframes bgColors {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ee6055;
+  }
+}
+
+#jeopardy th,
+#jeopardy td {
+  border: solid 2px black;
+  width: 12em;
+  padding: 1em;
+}
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 4em;
+}
+td {
+  height: 10em;
+}
+td:hover {
+  cursor: help;
+  background: rgba(0, 0, 0, 0.2);
+}
